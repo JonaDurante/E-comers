@@ -1,3 +1,4 @@
+using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -15,6 +16,11 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // services.AddSingleton --> Vive hasta que muere la app (un montón)
+            
+             // Inicia con la solicitud "https" muere una vez responda la API
+            services.AddScoped<IProductRepository , ProductRepository>();
+            // Dicen que es el indicado pasamos interface y la instancia de la clase en si 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPIv5", Version = "v1" });            });
