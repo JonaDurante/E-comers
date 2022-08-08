@@ -1,0 +1,13 @@
+obj
+bin
+appsettings.json
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/Skinet/FileContentIndex/7b4030d4-92ef-41ac-810d-dd833d965e6f.vsidx
+.vs/Skinet/FileContentIndex/350d96af-e074-4b6c-b25a-8f2c3280c65b.vsidx
+.vs/Skinet/FileContentIndex/e301224c-5332-4757-8175-75a3ec21c947.vsidx
+.vs/Skinet/FileContentIndex/read.lock
+.vs/Skinet/v17/.suo
+API/skinet.db-shm
+API/skinet.db-wal
+*.db
